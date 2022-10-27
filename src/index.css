@@ -1,13 +1,53 @@
 body {
+  font-family: Inter;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+}
+.left-nav {
+  display: flex;
+  align-items: center;
+}
+.left-nav > img {
+  max-width: 50px;
+  margin-right: 10px;
+}
+.left-nav > h1 {
+  font-size: 22.25px;
+  color: #61dafb;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  height: 91px;
+  background-color: #21222a;
+  padding: 30px 25px;
+}
+.nav > h3 {
+  margin-left: auto;
+  height: 21px;
+  color: #deebf8;
+  font-weight: 600;
+}
+.main--body {
+  background: #282d35 url('./images/react-logo.png') no-repeat fixed right;
+  background-size: 30%;
+  height: 100vh;
+  padding: 30px;
+  color: #FFFFFF;
+}
+.main--body > h1 {
+  font-size: 39.06px;
+  line-height: 47px;
+  margin-bottom: 40px;
+}
+.main--list > li{
+    padding: 10px;
+    font-weight: 400;
+}
+.main--list > li::marker{
+    color: #61DAFB;
+    font-size: 30px;
+    
 }
